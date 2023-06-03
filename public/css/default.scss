@@ -1,0 +1,48 @@
+
+:root, :after, :before {
+    --body-font: 'Nunito', sans-serif;
+    --display-font: 'Archivo Black', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    font-size: 1.25rem;
+    line-height: 1.33em;
+    font-weight: 400;
+    font-variant-numeric: lining-nums;     /* high-level property          */
+    -moz-font-feature-settings: 'lnum';    /* low-level (old Firefox)      */
+    -webkit-font-feature-settings: 'lnum'; /* low-level (old Webkit)       */
+    font-feature-settings: 'lnum' on;      /* low-level (all new browsers) */
+    background-color: #1D1D1D;
+    color: #fff;
+  }
+  
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { 
+    font-family: var(--display-font); 
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1.33em;
+  }
+
+  .base-section {
+    padding-block: 240px;
+  }
+
+  .center {
+    max-width: 90%;
+    margin: 0 auto;
+    width: 1080px;
+    &[size="narrow"] {
+      width: 720px;   
+    }
+    &[size="large""] {
+      width: 1440px;
+    }
+  }
