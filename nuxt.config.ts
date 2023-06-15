@@ -22,7 +22,7 @@ export default defineNuxtConfig({
           {
             rel: "stylesheet",
             href:
-              "/public/css/default.scss",
+              "@/public/css/default.scss",
           },
         ],
       }
